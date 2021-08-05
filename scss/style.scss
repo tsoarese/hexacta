@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Digital-7';
+    src: url('Digital-7.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+p {
+    margin: 0;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -6,6 +18,7 @@ body {
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
+    font-family: 'Digital-7';
 
     .content {
         font-size: 1rem;
@@ -33,6 +46,7 @@ body {
             align-items: center;
             justify-content: center;
 
+
             img {
                 width: 62px;
                 height: 143px;
@@ -44,6 +58,60 @@ body {
                 margin: 0 40px;
                 background: #000;
                 border-radius: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .opcion-1,
+                .opcion-2,
+                .opcion-3 {
+                    display: flex;
+
+                    &.hide {
+                        display: none;
+                    }
+
+                    .col {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-content: flex-end;
+                        align-items: flex-end;
+                        padding: 10px;
+
+                        .floor-big {
+                            font-size: 80px;
+                            text-align: center;
+                            margin: 5px 0 0 0;
+                            align-self: center;
+                        }
+
+                        .floor {
+                            font-size: 36px;
+                            text-align: center;
+                            margin: 5px 0 0 0;
+                            align-self: center;
+                            position: relative;
+
+                            span {}
+                        }
+
+                        .text {
+                            font-size: 20px;
+                        }
+
+                    }
+                }
+
+                .opcion-2,
+                .opcion-3 {
+                    color: #D30000;
+                }
+
+                .opcion-1 {
+                    color: white;
+                    font-size: 20px;
+                }
 
             }
         }
