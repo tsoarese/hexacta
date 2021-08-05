@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+body .content {
+  font-size: 1rem;
+  margin: auto;
+  background: #FFFFFF;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(228, 228, 228, 0.12) 100%);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%);
+  border: 1px solid #979797;
+  border-radius: 69px;
+  padding: 2rem;
+  min-width: 800px;
+  min-height: 786px;
+  display: grid;
+  grid-template-areas: "header header aside " "main main aside " "main main aside";
+  grid-template-columns: auto auto 226px;
+  grid-template-rows: 212px auto auto;
+}
+body .content header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .content header img {
+  width: 62px;
+  height: 143px;
+}
+body .content header .leed {
+  width: 310px;
+  height: 143px;
+  margin: 0 40px;
+  background: #000;
+  border-radius: 14px;
+}
+body .content main {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  display: flex;
+  background: green;
+}
+body .content aside {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: aside;
+  background: pink;
+}
