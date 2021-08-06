@@ -13,13 +13,6 @@
     <meta property="og:title" content="A Basic Test site">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://www.soares.cl/test.html">
-    <meta property="og:description" content="A simple HTML5 Template for new projects.">
-    <meta property="og:image" content="image.png">
-
-    <!-- <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
-
     <link rel="stylesheet" href="css/style.css?v=1.0">
 
 </head>
@@ -28,19 +21,170 @@
 
     <div class="content">
         <header id="leed">
-            <img src="img/dots.png" alt="dots">
-            <div class="leed"></div>
-            <img src="img/dots.png" alt="dots">
+            <img class="dots" src="img/dots.png" alt="dots">
+            <div class="leed">
+                <div class="opcion-1 hide" id="step1">
+                    <p id="mensaje">SELECT YOUR FLOOR AND PRESS GO
+                        <br />
+                        between
+                        <br />
+                        01 - 105</p>
+                </div>
+                <div class="opcion-2 hide" id="step2">
+                    <div class="col">
+                        <p class="text">SELECT YOUR FLOOR</p>
+                        <p class="floor-big">03</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">LAST FLOOR</p>
+                        <p class="floor">105</p>
+                    </div>
+                </div>
+                <div class="opcion-3" id="step3">
+                    <div class="col">
+                        <p class="text">CURRENT FLOOR</p>
+                        <p class="floor-big">15</p>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <p class="text">NEXT FLOOR</p>
+                            <p class="floor">105</p>
+                        </div>
+                        <div class="item">
+                            <p class="text">ETA</p>
+                            <p class="floor">222 <span>SEG</span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <img class="dots" src="img/dots.png" alt="dots">
         </header>
+
         <main id="buttons">
+
+            <button>
+                <span>1</span>
+            </button>
+
+            <button onclick="addNumber(2)">
+                <span>2</span>
+            </button>
+
+            <button onclick="addNumber(3)">
+                <span>3</span></button>
+
+            <button onclick="addNumber(4)">
+                <span>4</span>
+            </button>
+
+            <button onclick="addNumber(5)">
+                <span>5</span>
+            </button>
+
+            <button onclick="addNumber(6)">
+                <span>6</span>
+            </button>
+
+            <button onclick="addNumber(7)">
+                <span>7</span>
+            </button>
+
+            <button onclick="addNumber(8)">
+                <span>8</span>
+            </button>
+
+            <button onclick="addNumber(9)">
+                <span>9</span>
+            </button>
+
+            <button class="red" onclick="resetInput()">
+                <span>X</span>
+            </button>
+
+            <button onclick="addNumber(0)">
+                <span>0</span>
+            </button>
+
+            <button class="green" onclick="addFloor()">
+                <span>GO</span>
+            </button>
+
+            <button onclick="addNumber('G1')">
+                <span>G1</span>
+            </button>
+
+            <button onclick="addNumber('G2')">
+                <span>G2</span>
+            </button>
+
+            <button onclick="addNumber('G3')">
+                <span>G3</span>
+            </button>
+
+            <button onclick="closeDoors()">
+                <img src="img/open.png" alt="close">
+            </button>
+
+            <div> </div>
+
+            <button onclick="closeDoors()">
+                <img src="img/close.png" alt="close">
+
+            </button>
 
         </main>
         <aside id="selected-floors">
+            <li>
+                <span>07</span>
+                <button>X</button>
+            </li>
+
+            <li>
+                <span>08</span>
+                <button>X</button>
+            </li>
+
+            <li>
+                <span>15</span>
+                <button>X</button>
+            </li>
+
+            <li>
+                <span>34</span>
+                <button>X</button>
+            </li>
+
+            <li>
+                <span>39</span>
+                <button>X</button>
+            </li>
+
+            <li>
+                <span>55</span>
+                <button>X</button>
+            </li>
+
+            <li>
+                <span>68</span>
+                <button>X</button>
+            </li>
+
+            <li>
+                <span>87</span>
+                <button>X</button>
+            </li>
+
+            <li>
+                <span>105</span>
+                <button>X</button>
+            </li>
+
+
+
+
 
         </aside>
-
-
-
 
     </div>
     <script src="js/scripts.js"></script>
