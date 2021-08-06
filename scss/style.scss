@@ -120,6 +120,12 @@ body {
                 .opcion-1 {
                     color: white;
                     font-size: 20px;
+
+                    .mensaje {
+                        text-align: center;
+                        line-height: 31px;
+                        font-size: 21px;
+                    }
                 }
 
                 .opcion-3 {
@@ -273,9 +279,10 @@ body {
 
             li {
                 display: flex;
-                justify-content: center;
+                justify-content: flex-end;
                 align-content: center;
                 align-items: center;
+                margin: 0px 16px 0 0;
 
                 span {
                     font-size: 46px;
@@ -287,8 +294,21 @@ body {
                     border-radius: 50%;
                     height: 40px;
                     width: 40px;
-                    border: none;
                     margin: 5px;
+                    background: rgb(98 13 13 / 64%);
+                    border: 1.5px solid rgb(255 255 255 / 65%);
+                    font-family: "Digital-7";
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 27px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: rgb(174 11 11 / 64%);
+                        border: 1.5px solid rgb(255 255 255);
+                    }
                 }
             }
 

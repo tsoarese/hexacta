@@ -118,6 +118,11 @@ body .content header .leed .opcion-1 {
   color: white;
   font-size: 20px;
 }
+body .content header .leed .opcion-1 .mensaje {
+  text-align: center;
+  line-height: 31px;
+  font-size: 21px;
+}
 body .content header .leed .opcion-3 .col .item {
   display: flex;
   flex-direction: column;
@@ -241,9 +246,10 @@ body .content aside::-webkit-scrollbar-thumb {
 }
 body .content aside li {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-content: center;
   align-items: center;
+  margin: 0px 16px 0 0;
 }
 body .content aside li span {
   font-size: 46px;
@@ -254,6 +260,18 @@ body .content aside li button {
   border-radius: 50%;
   height: 40px;
   width: 40px;
-  border: none;
   margin: 5px;
+  background: rgba(98, 13, 13, 0.64);
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  font-family: "Digital-7";
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+}
+body .content aside li button:hover {
+  cursor: pointer;
+  background: rgba(174, 11, 11, 0.64);
+  border: 1.5px solid white;
 }
